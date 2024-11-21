@@ -1,0 +1,229 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', monospace;
+    background: lightblue;
+    color: rgb(0, 0, 0);
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  /* Navbar */
+  nav {
+    height: 80px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(105, 173, 255);
+    position: fixed;
+    top: 0;
+    width: 100%; /* Ensure it spans the full width */
+    z-index: 1000; /* Keep navbar on top */
+  }
+  
+  nav h2 {
+    font-family: "Press Start 2P", monospace;
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: white;
+  }
+  
+  .part2nav {
+    display: flex;
+    gap: 30px; /* Space between links */
+  }
+  
+  /* Main Content */
+  main {
+    padding-top: 100px; /* Account for fixed navbar */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Section Styles */
+  section {
+    width: 100%;
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px;
+    background-size: cover;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+  }
+  
+  #about {
+    display: flex;
+    flex-direction: row; /* Align text and image side by side */
+    gap: 20px;
+  }
+  
+  .textabt {
+    flex: 1; /* Take up available space */
+    font-size: 20px;
+  }
+  
+  .abtimg {
+    flex: 1; /* Take up available space */
+    background-image: url("adddddd.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 250px;
+    height: 60vh; /* Adjust size for responsiveness */
+  }
+  
+  #skills {
+    background-color: lightgrey;
+  }
+  
+  #skills h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .boxcont {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+  }
+  
+  .box img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    nav h2 {
+      font-size: 18px;
+    }
+  
+    nav a {
+      font-size: 14px;
+    }
+  
+    #about {
+      flex-direction: column; /* Stack text and image vertically */
+      text-align: center;
+    }
+  
+    .abtimg {
+      height: 40vh;
+    }
+  
+    .box {
+      height: 150px;
+      width: 150px;
+    }
+  
+    .box img {
+      height: 80%;
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    nav {
+      flex-direction: column; /* Stack navbar items */
+      height: auto;
+      padding: 10px;
+    }
+  
+    nav h2 {
+      margin-bottom: 10px;
+    }
+  
+    .part2nav {
+      flex-direction: column; /* Stack links */
+      gap: 10px;
+    }
+  
+    .abtimg {
+      height: 30vh;
+    }
+  
+    .box {
+      height: 100px;
+      width: 100px;
+    }
+  
+    .box img { 
+      
+      height: 70%;
+      width: 70%;
+    }
+  }
+  
+
+
+  /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Contact Section */
+  #contact {display: flex;
+    
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+  }
+  
+  #contact h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;padding-right: 50px;
+  }
+  
+  #contact p {
+    font-size: 18px;padding-right: 50px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between icons */
+    margin-top: 20px;
+  }
+  
+  .social-links a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .social-links a img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
